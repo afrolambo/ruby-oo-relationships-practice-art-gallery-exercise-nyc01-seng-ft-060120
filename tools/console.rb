@@ -1,10 +1,11 @@
 require_relative '../config/environment.rb'
 
 met = Gallery.new("Metropolitan Art Gallery", "New York")
+charles = Doner.new("Charles", 1000)
 
 
-arty = Artist.new("Arthur", 15)
-sam = Artist.new("Sam", 25)
+arty = Artist.new("Arthur", 15, charles)
+sam = Artist.new("Sam", 25, charles)
 
 x = Painting.new("X", 200, arty, met)
 y = Painting.new("Y", 35, arty, met)

@@ -2,13 +2,14 @@
     # Artist HAS MANY Paintings
 class Artist
 
-  attr_reader :name, :years_experience
+  attr_reader :name, :years_experience, :doner
 
   @@all = []
 
-  def initialize(name, years_experience)
+  def initialize(name, years_experience, doner)
     @name = name
     @years_experience = years_experience
+    @doner = doner
     @@all << self 
   end
 
@@ -65,3 +66,5 @@ end
   # Returns an instance of the artist with the highest amount of paintings per year of experience.
 # Artist#create_painting
   # Given the arguments of title, price and gallery, creates a new painting belonging to that artist
+# Artist now has a Donor
+    # doner in argument  
